@@ -157,5 +157,6 @@ class tictactoe:
 	def __repr__(self):
 		self.draw()
 		return ""
-a=tictactoe()
-a.play()
+if __name__=='__main__':
+	env=tictactoe()
+	env.play()
