@@ -21,7 +21,6 @@ class tictactoe:
 		choice=int(input("do u want O ? 1-yes 0-no "))
 		if choice:
 			self.player,self.bot=self.bot,self.player
-		#print(f"you - {self.player} player2 - {self.bot}")
 		self.turn = randint(0,1)
 	def draw(self):
 		system("cls")
@@ -159,15 +158,4 @@ class tictactoe:
 		self.draw()
 		return ""
 a=tictactoe()
-#a.bot="X"
-#a.player="O"
-#a[1,1]="X"
-#a[2,0]="O"
-#a[2,2]="O"
-#a[1,0]="X"
-#print(a.empty,a)
-#del a[1,0]
-#print(a.empty,a)
-#a.turn=0
-#a.Bot()
 a.play()
